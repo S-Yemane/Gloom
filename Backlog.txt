@@ -1,0 +1,27 @@
+Iteration 1:
+	Working Stage and Stage transition.
+	Actor for the player to control.
+	FPS Camera and Camera controls.
+	Spawn point - Actor spawns into map
+	Exit point - Level is cleared when Actor moves into location. Stage transition to next level occurs.
+		Number of total levels: 5
+	
+
+Iteration 2:
+	Stage-Building.
+	Random Map generation.
+		Blocks are generated to create a maze-like structure to Map.
+		Map is still completeable by player - actor can be moved to exit despite obstacles in path
+
+Iteration 3:
+	Weapon Mechanics.
+	Introduction of ranged weapons.
+		Projectiles with damage values from actor.
+
+Iteration 4:
+	Enemy Mechanics.
+	Introduction of basic 'slime' enemies.
+		Health and Damage increase depending on current level.
+	Slimes can move around the map; "patrols"
+	Slimes can damage the Actor by moving into the Actor's space
+		Damage from slimes also knocks back actor a distance.
