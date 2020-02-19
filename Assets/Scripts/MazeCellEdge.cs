@@ -18,6 +18,4 @@ public abstract class MazeCellEdge : MonoBehaviour
 		transform.localPosition = Vector3.zero;
 		transform.localRotation = direction.ToRotation();
 	}
-
-
 }
