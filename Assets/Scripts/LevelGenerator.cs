@@ -57,13 +57,13 @@ public class LevelGenerator : MonoBehaviour
 	{
 		NORTH, EAST, SOUTH, WEST
 	};
-	public float generationStepDelay;
 
 	public Vector2Int size;
 
 	public MazeCell cellPrefab;
 	public MazePassage passagePrefab;
 	public MazeWall wallPrefab;
+
 
 	public Vector2Int RandomCoordinates
 	{
@@ -79,19 +79,15 @@ public class LevelGenerator : MonoBehaviour
 	}
 
 	private MazeCell[,] cells;
-	private void Start()
-	{
-		StartCoroutine(Generate());
-	}
 
 	public MazeCell GetCell(Vector2Int coordinates)
 	{
 		return cells[coordinates.x, coordinates.y];
 	}
 
-	public IEnumerator Generate()
+	public IEnumerator Generate(float delay)
 	{
-		WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
+		WaitForSeconds stepDelay = new WaitForSeconds(delay);
 		cells = new MazeCell[size.x, size.y];
 		List<MazeCell> activeCells = new List<MazeCell>();
 		DoFirstGenerationStep(activeCells);
