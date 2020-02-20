@@ -7,6 +7,9 @@ public class Manager : MonoBehaviour
 	public LevelGenerator mazePrefab;
 
 	public Vector2Int size;
+
+	public bool RandomSeed;
+
 	[Range(1, 999)]
 	public int seed = 1;
 
@@ -28,7 +31,7 @@ public class Manager : MonoBehaviour
 
 	private void BeginGame()
 	{
-		//Random.InitState(seed);
+		Random.InitState(RandomSeed ? Random.Range(1, 999) : seed);
 		mazeInstance = Instantiate(mazePrefab);
 		mazeInstance.size = this.size;
 		StartCoroutine(mazeInstance.Generate(delay));
