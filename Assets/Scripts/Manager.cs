@@ -32,9 +32,9 @@ public class Manager : MonoBehaviour
 	private void BeginGame()
 	{
 		Random.InitState(RandomSeed ? Random.Range(1, 999) : seed);
-		mazeInstance = Instantiate(mazePrefab);
+		mazeInstance = Instantiate(mazePrefab, transform.position, transform.rotation);
 		mazeInstance.size = this.size;
-		StartCoroutine(mazeInstance.Generate(delay));
+		mazeInstance.Generate();
 	}
 
 	private void RestartGame()

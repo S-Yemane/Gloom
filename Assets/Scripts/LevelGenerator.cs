@@ -36,16 +36,14 @@ public class LevelGenerator : MonoBehaviour
 		return cells[coordinates.x, coordinates.y];
 	}
 
-	public IEnumerator Generate(float delay)
+	public void Generate()
 	{
-		WaitForSeconds stepDelay = new WaitForSeconds(delay);
 		cells = new MazeCell[size.x, size.y];
 		List<MazeCell> activeCells = new List<MazeCell>();
 		DoFirstGenerationStep(activeCells);
 		
 		while (activeCells.Count > 0)
 		{
-			yield return delay;
 			DoNextGenerationStep(activeCells);
 		}
 	}
