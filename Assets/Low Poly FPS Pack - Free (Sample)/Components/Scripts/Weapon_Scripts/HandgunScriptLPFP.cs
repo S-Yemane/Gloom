@@ -15,7 +15,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	[Header("Gun Camera Options")]
 	//How fast the camera field of view changes when aiming 
 	[Tooltip("How fast the camera field of view changes when aiming.")]
-	public float fovSpeed = 15.0f;
+	public float fovSpeed = 20.0f;
 	//Default camera field of view
 	[Tooltip("Default value for camera field of view (40 is recommended).")]
 	public float defaultFov = 40.0f;
@@ -239,7 +239,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
 
-		//Timescale settings
+        //Timescale settings
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        /*
 		//Change timescale to normal when 1 key is pressed
 		if (Input.GetKeyDown (KeyCode.Alpha1)) 
 		{
@@ -270,15 +272,19 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			Time.timeScale = 0.0f;
 			timescaleText.text = "0.0";
 		}
+        */
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-		//Set current ammo text from ammo int
-		currentAmmoText.text = currentAmmo.ToString ();
+        //Set current ammo text from ammo int
+        currentAmmoText.text = currentAmmo.ToString ();
 
 		//Continosuly check which animation 
 		//is currently playing
 		AnimationCheck ();
 
-		//Play knife attack 1 animation when Q key is pressed
+        //Play knife attack 1 animation when Q key is pressed
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        /*
 		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
 		{
 			anim.Play ("Knife Attack 1", 0, 0f);
@@ -288,9 +294,11 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			anim.Play ("Knife Attack 2", 0, 0f);
 		}
-			
-		//Throw grenade when pressing G key
-		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
+        */
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        //Throw grenade when pressing G key
+        if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
 		{
 			StartCoroutine (GrenadeSpawnDelay ());
 			//Play grenade throw animation
@@ -398,7 +406,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 				Spawnpoints.casingSpawnPoint.transform.rotation);
 		}
 
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//Inspect weapon when pressing T key
+        /*
 		if (Input.GetKeyDown (KeyCode.T)) 
 		{
 			anim.SetTrigger ("Inspect");
@@ -433,6 +443,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			anim.SetBool ("Holster", false);
 		}
+        */
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		//Reload 
 		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
