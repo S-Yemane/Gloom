@@ -16,6 +16,8 @@ public class LevelGenerator : MonoBehaviour
 	public MazePassage passagePrefab;
 	public MazeWall wallPrefab;
 
+	private int cellSize = 5;
+
 	public Vector2Int RandomCoordinates
 	{
 		get
@@ -110,7 +112,7 @@ public class LevelGenerator : MonoBehaviour
 		newCell.coords = coords;
 		newCell.name = "Maze Cell " + coords.x + ", " + coords.y;
 		newCell.transform.parent = transform;
-		newCell.transform.localPosition = new Vector3(coords.x - size.x * 0.5f + 0.5f, 0f, coords.y - size.y * 0.5f + 0.5f);
+		newCell.transform.localPosition = new Vector3((coords.x - size.x * 0.5f + 0.5f) * cellSize, 0f, (coords.y - size.y * 0.5f + 0.5f) * cellSize);
 		return newCell;
 	}
 }
