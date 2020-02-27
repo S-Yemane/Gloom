@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-02-19T15:27:49.533-08:00
-  initializedAtString: 2020-02-19T15:15:50.380-08:00
+  lastUpdatedAtString: 2020-02-26T16:59:35.767-08:00
+  initializedAtString: 2020-02-26T16:56:27.060-08:00
   localBranches:
   - name: daniel
     tracking: origin/daniel
+  - name: Dennis
+    tracking: origin/Dennis
   - name: master
     tracking: origin/master
+  - name: mina
+    tracking: origin/mina
   remoteBranches:
   - name: origin/daniel
     tracking: '[None]'
@@ -28,6 +32,8 @@ MonoBehaviour:
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/master
+    tracking: '[None]'
+  - name: origin/mina
     tracking: '[None]'
   - name: origin/shalom
     tracking: '[None]'
@@ -42,18 +48,30 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - daniel
+    - Dennis
     - master
+    - mina
     values:
     - name: daniel
       remote:
         name: origin
         url: https://github.com/S-Yemane/Gloom.git
       trackingBranch: daniel
+    - name: Dennis
+      remote:
+        name: origin
+        url: https://github.com/S-Yemane/Gloom.git
+      trackingBranch: Dennis
     - name: master
       remote:
         name: origin
         url: https://github.com/S-Yemane/Gloom.git
       trackingBranch: master
+    - name: mina
+      remote:
+        name: origin
+        url: https://github.com/S-Yemane/Gloom.git
+      trackingBranch: mina
   remoteConfigBranches:
     keys:
     - origin
@@ -63,6 +81,7 @@ MonoBehaviour:
       - Dennis
       - HEAD
       - master
+      - mina
       - shalom
     subKeyValues:
     - Values:
@@ -82,6 +101,11 @@ MonoBehaviour:
           url: https://github.com/S-Yemane/Gloom.git
         trackingBranch: 
       - name: master
+        remote:
+          name: origin
+          url: https://github.com/S-Yemane/Gloom.git
+        trackingBranch: 
+      - name: mina
         remote:
           name: origin
           url: https://github.com/S-Yemane/Gloom.git

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpeedPerk
   - ColorPerk
+  - Color Change
   layers:
   - Default
   - TransparentFX
