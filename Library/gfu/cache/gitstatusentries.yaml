@@ -13,30 +13,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-02-26T16:59:40.685-08:00
-  initializedAtString: 2020-02-26T15:52:52.989-08:00
+  lastUpdatedAtString: 2020-02-27T18:33:10.397-08:00
+  initializedAtString: 2020-02-27T18:33:10.397-08:00
   entries:
-  - path: Assets\FPS.unity
-    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Assets\FPS.unity
-    projectPath: Assets\FPS.unity
+  - path: Assets\Scripts\PlayerController.cs
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Assets\Scripts\PlayerController.cs
+    projectPath: Assets\Scripts\PlayerController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
+  - path: Library\ArtifactDB
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\Artifacts\2e\2e7f0f5f5d7db4b32aefd4924e22d15e
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\Artifacts\2e\2e7f0f5f5d7db4b32aefd4924e22d15e
+    projectPath: Library\Artifacts\2e\2e7f0f5f5d7db4b32aefd4924e22d15e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\42\428c7a31253d41c579028440c6a26bd3
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\Artifacts\42\428c7a31253d41c579028440c6a26bd3
+    projectPath: Library\Artifacts\42\428c7a31253d41c579028440c6a26bd3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5c\5c90d2cd08bdf0a345b5af1cf2ecfd91
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\Artifacts\5c\5c90d2cd08bdf0a345b5af1cf2ecfd91
+    projectPath: Library\Artifacts\5c\5c90d2cd08bdf0a345b5af1cf2ecfd91
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b0\b03f7134769af36e0313b903afaf831b
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\Artifacts\b0\b03f7134769af36e0313b903afaf831b
+    projectPath: Library\Artifacts\b0\b03f7134769af36e0313b903afaf831b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\EditorSnapSettings.asset
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\EditorSnapSettings.asset
+    projectPath: Library\EditorSnapSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -52,15 +82,63 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\SceneVisibilityState.asset
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\SourceAssetDB
     fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ProjectSettings\TagManager.asset
-    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
+  - path: Library\SourceAssetDB-lock
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\SourceAssetDB-lock
+    projectPath: Library\SourceAssetDB-lock
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\Hierarchy\286409-mainStage.json
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\StateCache\Hierarchy\286409-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\286409-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\SceneView\e7c1d1-mainStage.json
+    fullPath: C:\Users\Daniel\Documents\GitHub\Gloom\Library\StateCache\SceneView\e7c1d1-mainStage.json
+    projectPath: Library\StateCache\SceneView\e7c1d1-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

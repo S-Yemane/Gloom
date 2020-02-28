@@ -8,18 +8,21 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Rigidbody rb;
     float speedTimer = 0.0f;
-    bool endEffect = false;
+    bool SpeedEffect = false;
+
+
+
 
     void Start() {
         rb = GetComponent<Rigidbody>();
        
             }
     void Update() {
-        if (endEffect) {
+        if (SpeedEffect) {
             speedTimer += Time.deltaTime;
             if (speedTimer > 5.0f) {
                 speed = 10;
-                endEffect = false;
+                SpeedEffect = false;
                 speedTimer = 0.0f;
             }
         }
@@ -43,7 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             speed = 40;
-            endEffect = true;
+            SpeedEffect = true;
         }
         if (other.gameObject.CompareTag("ColorPerk"))
         {
