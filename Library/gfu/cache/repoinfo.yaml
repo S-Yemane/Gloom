@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-02-12T16:14:02.038-08:00
-  initializedAtString: 2020-02-12T16:14:02.038-08:00
+  lastUpdatedAtString: 2020-02-28T19:47:27.164-08:00
+  initializedAtString: 2020-02-28T17:38:19.442-08:00
   currentGitRemote:
     name: origin
     url: https://github.com/S-Yemane/Gloom.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: shane
+    tracking: origin/shane
   currentConfigBranch:
-    name: master
+    name: shane
     remote:
       name: origin
       url: https://github.com/S-Yemane/Gloom.git
-    trackingBranch: master
+    trackingBranch: shane
   currentConfigRemote:
     name: origin
     url: https://github.com/S-Yemane/Gloom.git
