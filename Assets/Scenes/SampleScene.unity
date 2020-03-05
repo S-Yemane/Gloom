@@ -303,6 +303,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1456239891011192110, guid: dc92ea163b7966446a076db53677cd73,
+        type: 3}
+      propertyPath: mazePrefab
+      value: 
+      objectReference: {fileID: 4795020448578422155, guid: 0062a0727b340954d98b0804f6091dc1,
+        type: 3}
     - target: {fileID: 1456239891011192111, guid: dc92ea163b7966446a076db53677cd73,
         type: 3}
       propertyPath: m_Name
