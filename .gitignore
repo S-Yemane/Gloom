@@ -1,4 +1,4 @@
-/[Ll]ibrary/
+# /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -48,6 +48,3 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-/Library/ArtifactDB
-/Library/CurrentLayout-default.dwlt
-/Library/SourceAssetDB
