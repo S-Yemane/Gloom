@@ -48,3 +48,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Library/ArtifactDB
+Library/CurrentLayout-default.dwlt
+Library/SourceAssetDB
