@@ -215,14 +215,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2296513296023472921, guid: 909d55a3142a92e47abd3091f62df558,
         type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 206594552}
-    - target: {fileID: 2296513296023472921, guid: 909d55a3142a92e47abd3091f62df558,
-        type: 3}
       propertyPath: teleportTarget
       value: 
       objectReference: {fileID: 1641723650}
+    - target: {fileID: 2296513296023472921, guid: 909d55a3142a92e47abd3091f62df558,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 206594552}
     - target: {fileID: 2296513296023472922, guid: 909d55a3142a92e47abd3091f62df558,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -290,12 +290,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3153838315759204430, guid: e7ca35413aebd81478af7b595fa97f31,
     type: 3}
   m_PrefabInstance: {fileID: 1387213215}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &753511264 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2296513296023472926, guid: 909d55a3142a92e47abd3091f62df558,
-    type: 3}
-  m_PrefabInstance: {fileID: 470214985}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &796349156
 GameObject:
@@ -839,7 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 1243068341}
   managerNext: {fileID: 1152533352}
-  teleporter: {fileID: 753511264}
+  teleporter: {fileID: 2296513295554060887}
   teleportLocation: {fileID: 1641723649}
   tarObject: {fileID: 0}
   tarTeleport: {fileID: 0}
@@ -1097,6 +1091,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2296513294631021823, guid: 909d55a3142a92e47abd3091f62df558,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2296513296023472921, guid: 909d55a3142a92e47abd3091f62df558,
         type: 3}
       propertyPath: player
@@ -1243,3 +1242,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7ca35413aebd81478af7b595fa97f31, type: 3}
+--- !u!1 &2296513295554060887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2296513296023472926, guid: 909d55a3142a92e47abd3091f62df558,
+    type: 3}
+  m_PrefabInstance: {fileID: 470214985}
+  m_PrefabAsset: {fileID: 0}
