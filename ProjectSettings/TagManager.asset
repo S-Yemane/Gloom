@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SpeedPerk
-  - Color Change
-  - ColorPerk
-  - Target
-  - Metal
-  - ExplosiveBarrel
+  - Triggerer
+  - Grass
+  - Stone
+  - Enemy
+  - Team2
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -32,17 +32,17 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MovableObject
+  - Ragdoll
+  - RemotePlayer
+  - IgnoreBullets
+  - Enemy
+  - Pickup
+  - Trigger
+  - MovingPlatform
+  - Debris
+  - LocalPlayer
+  - Weapon
   m_SortingLayers:
   - name: Default
     uniqueID: 0
