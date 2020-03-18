@@ -76,6 +76,14 @@ public class Weapon : MonoBehaviour
 	public bool bloodyMessEnabled = false;				// Enable features compatible with Bloody Mess by Heavy Diesel Softworks
 	public int weaponType = 0;							// Bloody mess property
 
+	// Gun Properties
+	// Changes to the Gun Class
+	public float barrelLength = 15.0f;				// Barrel length, in centimeters
+	public float handleLength = 8.0f;				// Handle length, in centimeters
+	public float gunWidth = 1.5f;					// Gun width, in centimeters
+	public Color barrelColor = Color.black;				// Barrel color
+	public Color handleColor = Color.black;				// Handle color
+
 	// Auto
 	public Auto auto = Auto.Full;						// How does this weapon fire - semi-auto or full-auto
 
