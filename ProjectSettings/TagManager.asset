@@ -10,6 +10,10 @@ TagManager:
   - Enemy
   - Team2
   - Ground
+  - SpeedPerk
+  - Color Change
+  - ColorPerk
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -19,10 +23,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - Border
+  - Player
   - 
   - 
   - 

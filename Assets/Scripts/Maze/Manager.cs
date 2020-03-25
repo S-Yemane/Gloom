@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Manager : MonoBehaviour
 {
@@ -17,15 +18,21 @@ public class Manager : MonoBehaviour
 
 	private LevelGenerator mazeInstance;
 
+    public NavMeshSurface surface;
+
 	private void Start()
 	{
 		BeginGame();
+        //UPDATES NAVMESH
+        surface.BuildNavMesh();
 	}
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
 			RestartGame();
+            //UPDATES NAVMESH
+            surface.BuildNavMesh();
 		}
 	}
 
