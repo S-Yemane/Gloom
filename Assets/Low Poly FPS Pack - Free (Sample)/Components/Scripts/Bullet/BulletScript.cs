@@ -13,6 +13,10 @@ public class BulletScript : MonoBehaviour {
 	public float minDestroyTime;
 	[Tooltip("Maximum time after impact that the bullet is destroyed")]
 	public float maxDestroyTime;
+	[Tooltip("Bullet Strength")]
+	public int bulletStrength;
+	[Tooltip("Bullet Range")]
+	public double bulletRange;
 
 	[Header("Impact Effect Prefabs")]
 	public Transform [] metalImpactPrefabs;
