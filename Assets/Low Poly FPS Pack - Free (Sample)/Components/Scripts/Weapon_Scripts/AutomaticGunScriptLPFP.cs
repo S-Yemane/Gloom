@@ -51,6 +51,10 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	public float autoReloadDelay;
 	//Check if reloading
 	private bool isReloading;
+	
+	// April 7th Update
+	// Added for weapon properties.
+	private double rangeOfShot;
 
 	//Holstering weapon
 	private bool hasBeenHolstered = false;
@@ -73,6 +77,11 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	//Check if out of ammo
 	private bool outOfAmmo;
 
+	// April 7th Update
+	// Added for weapon properties.
+	private int numOfShotsPerAmmo;
+	private int shotStrength;
+	
 	[Header("Bullet Settings")]
 	//Bullet
 	[Tooltip("How much force is applied to the bullet when shooting.")]
@@ -177,6 +186,12 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		//Set total ammo text from total ammo int
 		totalAmmoText.text = ammo.ToString();
 
+		// April 7th Update
+		// Added for weapon properties.
+		rangeOfShot = 500.0;
+		numOfShotsPerAmmo = 5;
+		shotStrength = 10;
+		
 		//Weapon sway
 		initialSwayPosition = transform.localPosition;
 
