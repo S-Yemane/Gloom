@@ -424,6 +424,13 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 					Spawnpoints.bulletSpawnPoint.transform.position,
 					Spawnpoints.bulletSpawnPoint.transform.rotation);
 
+				// April 7th Update
+				// Added for weapon properties.
+				// Used to set the properties to the bullets.
+				BulletScript mybullet = bullet.GetComponent<BulletScript>();
+				mybullet.bulletStrength = shotStrength;
+				mybullet.bulletRange = rangeOfShot;
+				
 				//Add velocity to the bullet
 				bullet.GetComponent<Rigidbody>().velocity = 
 					bullet.transform.forward * bulletForce;
