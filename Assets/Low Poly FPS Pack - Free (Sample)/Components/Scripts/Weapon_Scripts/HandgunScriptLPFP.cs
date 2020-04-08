@@ -71,7 +71,13 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	public int ammo;
 	//Check if out of ammo
 	private bool outOfAmmo;
-
+		
+	// April 7th Update
+	// Added for weapon properties.
+	private double rangeOfShot;
+	private int numOfShotsPerAmmo;
+	private int shotStrength;
+	
 	[Header("Bullet Settings")]
 	//Bullet
 	[Tooltip("How much force is applied to the bullet when shooting.")]
@@ -173,7 +179,13 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		currentWeaponText.text = weaponName;
 		//Set total ammo text from total ammo int
 		totalAmmoText.text = ammo.ToString();
-
+		
+		// April 7th Update
+		// Added for weapon properties.
+		rangeOfShot = 300.0;
+		numOfShotsPerAmmo = 1;
+		shotStrength = 5;
+		
 		//Weapon sway
 		initialSwayPosition = transform.localPosition;
 
@@ -396,6 +408,13 @@ public class HandgunScriptLPFP : MonoBehaviour {
 				Spawnpoints.bulletSpawnPoint.transform.position,
 				Spawnpoints.bulletSpawnPoint.transform.rotation);
 
+			// April 7th Update
+			// Added for weapon properties.
+			// Used to set the properties to the bullets.
+			BulletScript mybullet = bullet.GetComponent<BulletScript>();
+			mybullet.bulletStrength = shotStrength;
+			mybullet.bulletRange = rangeOfShot;
+			
 			//Add velocity to the bullet
 			bullet.GetComponent<Rigidbody>().velocity = 
 			bullet.transform.forward * bulletForce;
