@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-04-12T20:29:36.491-07:00
-  initializedAtString: 2020-04-12T19:21:02.974-07:00
+  lastUpdatedAtString: 2020-04-14T17:56:19.688-07:00
+  initializedAtString: 2020-04-14T17:27:47.871-07:00
   entries:
-  - path: Assets/MainMenuScene.unity
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/MainMenuScene.unity
-    projectPath: Assets/MainMenuScene.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets/MainMenuScene.unity.meta
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/MainMenuScene.unity.meta
-    projectPath: Assets/MainMenuScene.unity.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets/Models.meta
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Models.meta
-    projectPath: Assets/Models.meta
+  - path: Assets/GameOverScreen.cs
+    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/GameOverScreen.cs
+    projectPath: Assets/GameOverScreen.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Assets/Models/Characters.meta
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Models/Characters.meta
-    projectPath: Assets/Models/Characters.meta
+  - path: Assets/GameOverScreen.cs.meta
+    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/GameOverScreen.cs.meta
+    projectPath: Assets/GameOverScreen.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/gameovertext.png
+    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/gameovertext.png
+    projectPath: Assets/gameovertext.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/gameovertext.png.meta
+    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/gameovertext.png.meta
+    projectPath: Assets/gameovertext.png.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -44,47 +44,11 @@ MonoBehaviour:
     fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Scenes/GameOverScreen.unity
     projectPath: Assets/Scenes/GameOverScreen.unity
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets/Scenes/GameOverScreen.unity.meta
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Scenes/GameOverScreen.unity.meta
-    projectPath: Assets/Scenes/GameOverScreen.unity.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets/Scenes/MainMenuScene.unity
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Scenes/MainMenuScene.unity
-    projectPath: Assets/Scenes/MainMenuScene.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets/Scenes/MainMenuScene.unity.meta
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Assets/Scenes/MainMenuScene.unity.meta
-    projectPath: Assets/Scenes/MainMenuScene.unity.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library/ArtifactDB
     fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ArtifactDB
     projectPath: Library/ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ArtifactDB-lock
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ArtifactDB-lock
-    projectPath: Library/ArtifactDB-lock
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/CurrentLayout-default.dwlt
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/CurrentLayout-default.dwlt
-    projectPath: Library/CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/EditorInstance.json
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/EditorInstance.json
-    projectPath: Library/EditorInstance.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -112,105 +76,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library/SceneVisibilityState.asset
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/SceneVisibilityState.asset
-    projectPath: Library/SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.Rider.Editor.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-    projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.TextMeshPro.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.Timeline.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.Timeline.dll
-    projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-    projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-    projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-    projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/UnityEditor.UI.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/UnityEditor.UI.dll
-    projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-    projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptAssemblies/UnityEngine.UI.dll
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptAssemblies/UnityEngine.UI.dll
-    projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ScriptMapper
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ScriptMapper
-    projectPath: Library/ScriptMapper
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/ShaderCache/EditorEncounteredVariants
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/ShaderCache/EditorEncounteredVariants
-    projectPath: Library/ShaderCache/EditorEncounteredVariants
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library/SourceAssetDB
     fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/SourceAssetDB
     projectPath: Library/SourceAssetDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/SourceAssetDB-lock
-    fullPath: /Users/shanewilson/Documents/GitHub/Gloom/Library/SourceAssetDB-lock
-    projectPath: Library/SourceAssetDB-lock
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
