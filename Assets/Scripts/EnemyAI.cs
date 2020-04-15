@@ -1,45 +1,58 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-
-    [SerializeField] Transform target; //?
     [SerializeField] float chaseRange = 5f;
+    [SerializeField] float turnSpeed = 5f;
 
-
-    NavMeshAgent navMeshAgent; //? need to search up
-    float distanceToTarget = Mathf.Infinity; //
+    NavMeshAgent navMeshAgent;
+    float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
+    Transform target;
 
     void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>(); //??
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>().transform;
     }
 
     void Update()
     {
-        distanceToTarget = Vector3.Distance(target.position, transform.position); // measure distance between us and target(player)
-
+        if (health.IsDead())
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+        }
+        distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (isProvoked)
         {
             EngageTarget();
-        }else if(distanceToTarget <= chaseRange) // if the distance is less than 5f
+        }
+        else if (distanceToTarget <= chaseRange)
         {
             isProvoked = true;
         }
+    }
 
+    public void OnDamageTaken()
+    {
+        isProvoked = true;
     }
 
     private void EngageTarget()
     {
-        if(distanceToTarget >= navMeshAgent.stoppingDistance)
+        FaceTarget();
+        if (distanceToTarget >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
         }
-        if(distanceToTarget <= navMeshAgent.stoppingDistance)
+
+        if (distanceToTarget <= navMeshAgent.stoppingDistance)
         {
             AttackTarget();
         }
@@ -47,18 +60,26 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseTarget()
     {
-        navMeshAgent.SetDestination(target.position);  // set the AI's destination to where our target(player) is (so that its following the player)
+        GetComponent<Animator>().SetBool("attack", false);
+        GetComponent<Animator>().SetTrigger("move");
+        navMeshAgent.SetDestination(target.position);
     }
 
     private void AttackTarget()
     {
-        Debug.Log(name + " has seeked and is destyoying " + target.name);
+        GetComponent<Animator>().SetBool("attack", true);
     }
 
-    private void OnDrawGizmosSelected()
+    private void FaceTarget()
     {
-        // Display the explosion radius when selected
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+    }
+
+    void OnDrawGizmosSelected()
+    {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, chaseRange); // (mid point, radius)
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
